@@ -15,6 +15,8 @@ UserProcess::UserProcess(ustl::string filename, FileSystemInfo *fs_info, uint32 
 {
   ProcessRegistry::instance()->processStart(); //should also be called if you fork a process
 
+  foobar
+
   if (fd_ >= 0)
     loader_ = new Loader(fd_);
 
